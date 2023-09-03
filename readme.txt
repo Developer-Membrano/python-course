@@ -26,3 +26,8 @@ update({key : value})
 
 list comprehension
 object comprehension
+
+
+
+a function inside a class is called method
+instances is the one that called the class
