@@ -14,6 +14,25 @@ class Battery:
             range = "Equivalent to 1000 CC"
         return range
 
+
+class Tires:
+    def __init__(self, brand, weight, tire_specs):
+        self.brand = brand
+        self.weight = weight
+        self.style = tire_specs
+        self.tire_style = ['road', 'highway', 'mountain road', 'bulky road']
+    
+    def show_tires(self, preferred_tire_specs):
+        road_prompt = ""
+
+        if preferred_tire_specs not in self.tire_style:
+            return f"sorry but {preferred_tire_specs} is not available! "
+        else:
+            match(preferred_tire_specs):
+                case 'road':
+                    return 
+
+
 class Car:
 
     def __init__(self, make, model, year):
