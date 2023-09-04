@@ -1,3 +1,6 @@
+"""
+
+
 dogs = [
     {
         'German Shepperd' : 'Joey De leon',
@@ -21,3 +24,24 @@ for dog in dogs:
       if keys == 'K9':
          print(dog.get('address'))
 
+
+
+
+keys = ('Dog', 'Cat', 'Bird')
+value = ('German Sheppard', 'Pomeranian Cat', 'Eagle')
+
+new_animal_form = dict(zip(keys, value))
+print(new_animal_form)
+
+"""
+
+
+d1 = {"name": "Alice", "age": 25, "job": "SWE"}
+d2 = {"job": "Senior SWE", "location": "US", "age" : 30}
+d1 |= d2
+print(d1)
+
+d3 = {"name": "Alice", "age": 25, "job": "SWE"}
+d4 = {"job": "Senior SWE", "location": "US", "age" : 30}
+d3 | d4
+print(d3)
