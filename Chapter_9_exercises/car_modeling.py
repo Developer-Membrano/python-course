@@ -87,7 +87,7 @@ class ElectricCar(Car):
 customer_101 = Car("suzuki", "black fortuner", 2021) #Parent class
 customer_102 = ElectricCar("Honda", "Yellow cab", 2022, False, "Traffic sa Edsa") #Child class
 
-
+    
 
 print_battery = customer_101.battery.describe_battery()
 print_range = customer_101.battery.get_range()

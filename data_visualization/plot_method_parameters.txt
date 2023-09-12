@@ -1,0 +1,62 @@
+The `fmt` parameter in the `plot()` function is a format string that defines the basic properties of the plot. It's a shorthand combination of three parameters: color, marker, and line.
+
+Here are the possible values for each:
+
+1. **Color Codes**:
+    - 'b': blue
+    - 'g': green
+    - 'r': red
+    - 'c': cyan
+    - 'm': magenta
+    - 'y': yellow
+    - 'k': black
+    - 'w': white
+
+2. **Marker Styles**:
+    - '.': point marker
+    - ',': pixel marker
+    - 'o': circle marker
+    - 'v': triangle_down marker
+    - '^': triangle_up marker
+    - '<': triangle_left marker
+    - '>': triangle_right marker
+    - '1': tri_down marker
+    - '2': tri_up marker
+    - '3': tri_left marker
+    - '4': tri_right marker
+    - 's': square marker
+    - 'p': pentagon marker
+    - '*': star marker
+    - 'h': hexagon1 marker
+    - 'H': hexagon2 marker
+    - '+': plus marker
+    - 'x': x marker
+    - 'D': diamond marker
+    - 'd': thin_diamond marker
+
+3. **Line Styles**:
+    - '-': solid line style
+    - '--': dashed line style
+    - '-.': dash-dot line style
+    - ':': dotted line style
+
+You can combine one code from each category in any order to create a format string. For example, `'go--'` would create a plot with green circular markers connected by dashed lines.
+
+
+
+the `data` parameter in the `plot()` function:
+
+```python
+import matplotlib.pyplot as plt
+
+data = {
+    'a': [1, 2, 3, 4, 5],
+    'b': [1, 4, 9, 16, 25],
+}
+
+plt.plot('a', 'b', data=data)
+
+plt.show()
+```
+
+In this example, `data` is a dictionary that contains two lists 'a' and 'b'. The `plot()` function is called with 'a' and 'b' as arguments, which are keys in the `data` dictionary. The `data` parameter is set to the `data` dictionary. This tells `plot()` to look for 'a' and 'b' in the `data` dictionary and use those lists as the x and y values for the plot.
