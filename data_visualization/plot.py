@@ -6,6 +6,7 @@ x_squares = [1, 4, 9, 16, 25]
 y_squares = [5, 2, 3, 1, 7]
 
 
+
 animals = {
     'id_birds' : [20, 30, 50, 33, 24],
     'population' : [100, 150, 300, 203, 53]
